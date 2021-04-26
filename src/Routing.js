@@ -2,6 +2,7 @@ import React from 'react'
 import { Route } from 'react-router-dom'
 import { Login } from './Pages/Login'
 import { Register } from './Pages/Register'
+import { Home } from './Pages/Home'
 
 export const Routing = ({toggleLogin, toggleRegister}) => {
 
@@ -9,7 +10,7 @@ export const Routing = ({toggleLogin, toggleRegister}) => {
     return (
         <>
         <Route exact path="/">
-            
+            <Home />
         </Route>
 
         <Route exact path="/Login">
