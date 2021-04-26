@@ -1,0 +1,29 @@
+.loginContainer, .registerContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #7F5A83;
+    background: rgba(13, 50, 77, 0.75);
+    margin: auto;
+}
+
+.loginContainer h2, .registerContainer h2 {
+    color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+.loginContainer label, .registerContainer label {
+    color: white;
+}
+
+.loginContainer input, .registerContainer input {
+    width: 40%;
+}
+
+.loginContainer button, .registerContainer button {
+    width: 25%;
+    align-self: flex-end;
+}

@@ -1,1 +1,44 @@
-//Route to the various app views here
+import React from 'react'
+import { Route } from 'react-router-dom'
+import { Login } from './Pages/Login'
+import { Register } from './Pages/Register'
+
+export const Routing = ({toggleLogin, toggleRegister}) => {
+
+
+    return (
+        <>
+        <Route exact path="/">
+            
+        </Route>
+
+        <Route exact path="/Login">
+            <Login toggleLogin={toggleLogin} />
+        </Route>
+
+        <Route exact path="/Register">
+            <Register toggleRegister={toggleRegister} />
+        </Route>
+
+        <Route exact path="/GameLibrary">
+
+        </Route>
+
+        <Route exact path="/MyStuff">
+
+        </Route>
+
+        <Route exact path="/Groups">
+
+        </Route>
+
+        <Route exact path="/Groups/:groupId(\d+)">
+
+        </Route>
+
+        <Route exact path="/Games/:gameId(\d+)">
+
+        </Route>
+        </>
+    )
+}

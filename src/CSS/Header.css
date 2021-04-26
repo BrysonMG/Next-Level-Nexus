@@ -1,0 +1,45 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+#mainLogo {
+    width: 25em;
+}
+
+.logRegButtonsContainer {
+    width: 15em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.userContainer {
+    display: flex;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+.userContainer h4 {
+    color: white;
+}
+
+.profilePic {
+    height: 65px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.userAndBtn {
+    display: flex;
+    align-items: center;
+}
+
+.flexThis {
+    display: flex;
+    flex-direction: column;
+}
