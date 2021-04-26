@@ -1,0 +1,1 @@
+import { gamespotKey } from '../DataManagers/APIkeys.js'
