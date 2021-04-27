@@ -1,0 +1,57 @@
+#gameLibrarySearch {
+    width: 200px;
+    height: 30px;
+    border-radius: 25px;
+    font-size: larger;
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    color: white;
+    border: none;
+    align-self: flex-end;
+    margin-right: 160px;
+    margin-bottom: 20px;
+}
+
+.gameLibrary {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainGameImg {
+    height: 175px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.mainGameTitle {
+    color: white;
+    text-align: center;
+    width: 240px;
+}
+
+.libraryListContainer {
+    border: 3px solid #7F5A83;
+    background: rgba(13, 50, 77, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    height: 600px;
+    overflow-y: auto;
+    margin-bottom: 50px;
+}
+
+.mainGameContainer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #0d324d;
+    box-shadow: 0px 0px 15px 1px #7F5A83;
+}
+
+.libraryNote {
+    color: #7F5A83;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+}
