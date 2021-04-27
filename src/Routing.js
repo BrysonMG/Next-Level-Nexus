@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 import { Login } from './Pages/Login'
 import { Register } from './Pages/Register'
 import { Home } from './Pages/Home'
+import { GameLibrary } from './Pages/GameLibrary'
 
 export const Routing = ({toggleLogin, toggleRegister}) => {
 
@@ -22,7 +23,7 @@ export const Routing = ({toggleLogin, toggleRegister}) => {
         </Route>
 
         <Route exact path="/GameLibrary">
-
+            <GameLibrary />
         </Route>
 
         <Route exact path="/MyStuff">

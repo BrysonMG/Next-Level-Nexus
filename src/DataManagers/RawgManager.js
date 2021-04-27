@@ -10,7 +10,7 @@ export const getNewlyReleased = () => {
 }
 
 export const getGameLibrary = () => {
-    return fetch(`${baseURL}`)
+    return fetch(`${baseURL}&page=1&page_size=40`)
     .then(res=>res.json())
     .then(res=>res.results)
 }
