@@ -33,5 +33,13 @@
       "pass": "9",
       "id": 6
     }
+  ],
+  "userGames": [
+    {
+      "id": 1,
+      "userId": 3,
+      "gameId": 0,
+      "review": "Testing review for game"
+    }
   ]
 }

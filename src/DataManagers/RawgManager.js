@@ -1,5 +1,4 @@
 import {RAWGkey} from './APIkeys.js'
-//import {searchTerm} from ...wherever user types in search bar
 
 const baseURL = `https://api.rawg.io/api/games?key=${RAWGkey}`
 
@@ -15,8 +14,8 @@ export const getGameLibrary = () => {
     .then(res=>res.results)
 }
 
-// export const getSearchResults = () => {
-//     return fetch(`${baseURL}&search=${searchTerm}`)
-//     .then(res=>res.json())
-//     .then(res=>res.results)
-// }
+export const getSearchResults = (search) => {
+    return fetch(`${baseURL}&search=${search}&page=1&page_size=40`)
+    .then(res=>res.json())
+    .then(res=>res.results)
+}

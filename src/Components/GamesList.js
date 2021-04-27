@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { getGameLibrary } from '../DataManagers/RawgManager'
 import { GamesListCard } from './GamesListCard'
 import { SearchGames } from './SearchGames'
+import { getSearchResults } from '../DataManagers/RawgManager'
 import '../CSS/GameLibrary.css'
 
 
@@ -14,13 +15,19 @@ export const GamesList = () => {
         })
     }
 
+    const getSearchedGames = (search) => {
+        getSearchResults(search).then(resultsArray => {
+            setGames(resultsArray)
+        })
+    }
+
     useEffect(() => {
         getGames()
     }, [])
 
     return (
         <div className="gameLibrary">
-            <SearchGames />
+            <SearchGames getSearchedGames={getSearchedGames} />
             <div className="libraryListContainer">
                 {games.map(game => {
                     if (game.background_image === null) {
