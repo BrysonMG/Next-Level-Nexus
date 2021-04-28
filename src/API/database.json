@@ -38,8 +38,44 @@
     {
       "id": 1,
       "userId": 3,
-      "gameId": 0,
-      "review": "Testing review for game"
+      "gameId": 3498,
+      "review": "Testing review for game 1"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "gameId": 4200,
+      "review": "Testing review for game 2"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "gameId": 3328,
+      "review": "Testing review for game 3"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "gameId": 5286,
+      "review": "Testing review for game 4"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "gameId": 5679,
+      "review": "Testing review for game 5"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "gameId": 12020,
+      "review": "Testing review for game 6"
+    },
+    {
+      "id": 7,
+      "userId": 3,
+      "gameId": 4291,
+      "review": "Testing review for game 7"
     }
   ]
 }

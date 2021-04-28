@@ -4,6 +4,7 @@ import { Login } from './Pages/Login'
 import { Register } from './Pages/Register'
 import { Home } from './Pages/Home'
 import { GameLibrary } from './Pages/GameLibrary'
+import { MyStuff } from './Pages/MyStuff'
 
 export const Routing = ({toggleLogin, toggleRegister}) => {
 
@@ -27,7 +28,7 @@ export const Routing = ({toggleLogin, toggleRegister}) => {
         </Route>
 
         <Route exact path="/MyStuff">
-
+            <MyStuff />
         </Route>
 
         <Route exact path="/Groups">
