@@ -1,0 +1,54 @@
+.myGroupsContainer {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.myGroupsHeader {
+    color: white;
+}
+
+.myGroupName {
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+    #cb9b51 22%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 78%,
+	#462523 100%
+	);
+    color:transparent;
+    -webkit-background-clip:text;
+    text-align: center;
+}
+
+.myGroupGame {
+    color: white;
+    text-align: center;
+}
+
+.myGroupContainer {
+    background-color: #0d324d;
+    box-shadow: 0px 0px 15px 1px #7F5A83;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.myGroupsList {
+    border: 3px solid #7F5A83;
+    background: rgba(13, 50, 77, 0.75);
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    height: 400px;
+    justify-content: space-evenly;
+}

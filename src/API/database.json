@@ -77,5 +77,57 @@
       "gameId": 4291,
       "review": "Testing review for game 7"
     }
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "userId": 3,
+      "gameId": 3498,
+      "name": "GTA Five Guys",
+      "description": "A group of Los Santos terrorists. If you see another player's car, blow it up."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "gameId": 3328,
+      "name": "Wise Witchers",
+      "description": "We just chat and share our Witcher knowledge."
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "gameId": 4291,
+      "name": "CS: GO GO GO!",
+      "description": "A highly competitive group for late night CS: GO matches"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "gameId": 12020,
+      "name": "ZEUS: Zombie Eradication Unit Six",
+      "description": "Let's get together for some laid-back L4D2 runs"
+    }
+  ],
+  "groupMembers": [
+    {
+      "id": 1,
+      "userId": 3,
+      "groupId": 1
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "groupId": 2
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "groupId": 1
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "groupId": 4
+    }
   ]
 }
