@@ -1,4 +1,5 @@
 import React from 'react'
+import "../CSS/Collection.css"
 
 export const MyCollectionCard = ({game}) => {
     return (

@@ -19,3 +19,8 @@ export const getSearchResults = (search) => {
     .then(res=>res.json())
     .then(res=>res.results)
 }
+
+export const getGameById = (id) => {
+    return fetch(`https://api.rawg.io/api/games/${id}?key=${RAWGkey}`)
+    .then(res=>res.json())
+}
