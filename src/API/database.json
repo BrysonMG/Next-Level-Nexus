@@ -83,29 +83,37 @@
       "id": 1,
       "userId": 3,
       "gameId": 3498,
+      "gameTitle": "Grand Theft Auto V",
       "name": "GTA Five Guys",
-      "description": "A group of Los Santos terrorists. If you see another player's car, blow it up."
+      "description": "A group of Los Santos terrorists. If you see another player's car, blow it up.",
+      "logo": "https://i.imgur.com/JQF4hVv.png"
     },
     {
       "id": 2,
       "userId": 1,
       "gameId": 3328,
+      "gameTitle": "The Witcher 3: Wild Hunt",
       "name": "Wise Witchers",
-      "description": "We just chat and share our Witcher knowledge."
+      "description": "We just chat and share our Witcher knowledge.",
+      "logo": "https://i.imgur.com/8I1siUm.png"
     },
     {
       "id": 3,
       "userId": 1,
       "gameId": 4291,
+      "gameTitle": "Counter-Strike: Global",
       "name": "CS: GO GO GO!",
-      "description": "A highly competitive group for late night CS: GO matches"
+      "description": "A highly competitive group for late night CS: GO matches",
+      "logo": "https://i.imgur.com/vYXr99Z.png"
     },
     {
       "id": 4,
       "userId": 1,
       "gameId": 12020,
+      "gameTitle": "Left 4 Dead 2",
       "name": "ZEUS: Zombie Eradication Unit Six",
-      "description": "Let's get together for some laid-back L4D2 runs"
+      "description": "Let's get together for some laid-back L4D2 runs",
+      "logo": "https://i.imgur.com/bqin0wH.png"
     }
   ],
   "groupMembers": [

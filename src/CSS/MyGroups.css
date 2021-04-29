@@ -20,6 +20,7 @@
 	#462523 100%
 	);
     color:transparent;
+    background-clip: text;
     -webkit-background-clip:text;
     text-align: center;
 }
