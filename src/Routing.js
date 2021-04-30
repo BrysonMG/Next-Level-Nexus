@@ -6,6 +6,7 @@ import { Home } from './Pages/Home'
 import { GameLibrary } from './Pages/GameLibrary'
 import { MyStuff } from './Pages/MyStuff'
 import { Groups } from './Pages/Groups'
+import { CreateGroupForm } from './Components/CreateGroupForm'
 
 export const Routing = ({toggleLogin, toggleRegister}) => {
 
@@ -34,6 +35,10 @@ export const Routing = ({toggleLogin, toggleRegister}) => {
 
         <Route exact path="/Groups">
             <Groups />
+        </Route>
+
+        <Route exact path="/Groups/Create">
+            <CreateGroupForm />
         </Route>
 
         <Route exact path="/Groups/:groupId(\d+)">

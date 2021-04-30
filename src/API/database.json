@@ -39,42 +39,49 @@
       "id": 1,
       "userId": 3,
       "gameId": 3498,
+      "gameTitle": "Grand Theft Auto V",
       "review": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at egestas elit. Aliquam sagittis erat sit amet leo suscipit viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce id efficitur ex, vitae efficitur enim. Integer efficitur enim eget erat vehicula, ac finibus enim volutpat. Duis a dolor egestas, lacinia leo a, faucibus enim. Phasellus iaculis in metus laoreet feugiat. Suspendisse aliquam, tellus eget accumsan sodales, metus leo sagittis diam, ut mattis enim tortor quis diam. Nullam accumsan facilisis orci, a congue turpis luctus ut. Aenean vestibulum tempus enim, et facilisis risus tristique vitae. Donec a turpis diam. Praesent ipsum risus, consequat at dignissim ut, eleifend vitae leo. Aliquam suscipit magna orci, fringilla pharetra magna cursus posuere. Sed sit amet turpis lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce pulvinar sapien et nisi posuere blandit. Vivamus hendrerit eget urna vitae hendrerit. Pellentesque aliquam vulputate diam a rhoncus. Suspendisse nec massa ut tortor sagittis pellentesque. Vivamus sollicitudin, nisl quis accumsan ultrices, felis lectus gravida dolor, sit amet malesuada nisi purus ac ipsum. Ut id molestie lacus, nec ultricies mauris. Duis eget sagittis dui, eget fringilla lorem. Sed elementum ullamcorper pellentesque. "
     },
     {
       "id": 2,
       "userId": 2,
       "gameId": 4200,
+      "gameTitle": "Portal 2",
       "review": "Testing review for game 2"
     },
     {
       "id": 3,
       "userId": 3,
       "gameId": 3328,
+      "gameTitle": "The Witcher 3: Wild Hunt",
       "review": "Testing review for game 3"
     },
     {
       "id": 4,
       "userId": 3,
       "gameId": 5286,
+      "gameTitle": "Tomb Raider (2013)",
       "review": "Testing review for game 4"
     },
     {
       "id": 5,
       "userId": 3,
       "gameId": 5679,
+      "gameTitle": "The Elder Scrolls V: Skyrim",
       "review": "Testing review for game 5"
     },
     {
       "id": 6,
       "userId": 3,
       "gameId": 12020,
+      "gameTitle": "Left 4 Dead 2",
       "review": "Testing review for game 6"
     },
     {
       "id": 7,
       "userId": 3,
       "gameId": 4291,
+      "gameTitle": "Counter-Strike: Global Offensive",
       "review": "Testing review for game 7"
     }
   ],
@@ -101,7 +108,7 @@
       "id": 3,
       "userId": 1,
       "gameId": 4291,
-      "gameTitle": "Counter-Strike: Global",
+      "gameTitle": "Counter-Strike: Global Offensive",
       "name": "CS: GO GO GO!",
       "description": "A highly competitive group for late night CS: GO matches",
       "logo": "https://i.imgur.com/vYXr99Z.png"
@@ -114,6 +121,15 @@
       "name": "ZEUS: Zombie Eradication Unit Six",
       "description": "Let's get together for some laid-back L4D2 runs",
       "logo": "https://i.imgur.com/bqin0wH.png"
+    },
+    {
+      "userId": 3,
+      "gameId": 5286,
+      "gameTitle": "Tomb Raider (2013)",
+      "name": "Should Show In My Groups",
+      "description": "vmhvh mv",
+      "logo": "https://i.imgur.com/8I1siUm.png",
+      "id": 5
     }
   ],
   "groupMembers": [
@@ -136,6 +152,11 @@
       "id": 4,
       "userId": 3,
       "groupId": 4
+    },
+    {
+      "userId": 3,
+      "groupId": 5,
+      "id": 5
     }
   ]
 }
