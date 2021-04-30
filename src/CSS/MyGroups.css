@@ -30,13 +30,17 @@
     text-align: center;
 }
 
+.myGroupImg {
+    width: 175px;
+    margin: auto;
+}
+
 .myGroupContainer {
     background-color: #0d324d;
     box-shadow: 0px 0px 15px 1px #7F5A83;
-    height: 175px;
+    height: 370px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     width: 250px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -48,8 +52,7 @@
     border: 3px solid #7F5A83;
     background: rgba(13, 50, 77, 0.75);
     display: flex;
-    flex-wrap: wrap;
-    overflow-y: auto;
+    overflow-x: auto;
     height: 400px;
     justify-content: space-evenly;
 }

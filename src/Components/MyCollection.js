@@ -15,7 +15,6 @@ export const MyCollection = () => {
                 .map(userGame => getGameById(userGame.gameId));
 
             Promise.all(gamePromises).then(games => {
-                console.log(games);
                 setGames(games)
             })
         })

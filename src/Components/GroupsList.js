@@ -3,11 +3,13 @@ import { GroupsListCard } from './GroupsListCard'
 import { getAllGroups } from '../DataManagers/GroupManager'
 import { Button } from '@material-ui/core'
 import { SearchGroups } from './SearchGroups'
+import { useHistory } from 'react-router-dom'
 import GroupAddIcon from '@material-ui/icons/GroupAdd';
 import '../CSS/GroupsPage.css'
 
 export const GroupsList = () => {
     const [groups, setGroups] = useState([])
+    const history = useHistory()
 
     const getGroups = () => {
         getAllGroups().then(allGroups => {
@@ -24,6 +26,10 @@ export const GroupsList = () => {
         })
     }
 
+    const goToCreate = () => {
+        history.push("/Groups/Create")
+    }
+
     useEffect(() => {
         getGroups()
     }, [])
@@ -33,7 +39,7 @@ export const GroupsList = () => {
             <div className="groupsHeader">
                 <h1 className="groupsTitle">Join Groups</h1>
                 <div className="rightAlign">
-                    <Button id="newGroupButton" variant="contained" color="primary"><GroupAddIcon style={{ marginRight: 5 }} /> Create New Group</Button>
+                    <Button id="newGroupButton" onClick={goToCreate} variant="contained" color="primary"><GroupAddIcon style={{ marginRight: 5 }} /> Create New Group</Button>
                     <Button id="seeAllGroups" onClick={getGroups} variant="contained" color="primary">See All Groups</Button>
                     <SearchGroups getSearchedGroups={getSearchedGroups} />
                 </div>

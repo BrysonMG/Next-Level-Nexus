@@ -10,6 +10,14 @@ export const getGroupMembers = () => {
     .then(res=>res.json())
 }
 
+export const addGroupMember = member => {
+    return fetch(`http://localhost:8088/groupMembers`, {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(member)
+    }).then(res=>res.json())
+}
+
 export const getGroupById = id => {
     return fetch(`${url}/${id}`)
     .then(res=>res.json())
