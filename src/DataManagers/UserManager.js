@@ -14,3 +14,8 @@ export const getAllUsers = () => {
     return fetch(`${url}/users`)
     .then(res=>res.json())
 }
+
+export const getUserById = id => {
+    return fetch(`${url}/users/${id}`)
+    .then(res=>res.json())
+}
