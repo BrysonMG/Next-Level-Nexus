@@ -17,17 +17,6 @@ export const IndivGroupDetails = () => {
     })
     const currentUserId = parseInt(sessionStorage.getItem("nexusUser"))
 
-    // const [groupMembers, setGroupMembers] = useState([])
-    //This will be used in members list
-    // const getThisGroupsMembers = () => {
-    //     getGroupMembers().then(allGroupsMembers => {
-    //         const thisGroupsMembers = allGroupsMembers.filter(member=> {
-    //             return member.groupId === groupId
-    //         })
-    //         setGroupMembers(thisGroupsMembers)
-    //     })
-    // }
-
     const getUserType = () => {
         getGroupById(groupId).then(theGroup => {
             setGroup(theGroup)
