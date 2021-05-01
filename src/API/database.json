@@ -158,5 +158,13 @@
       "groupId": 5,
       "id": 5
     }
+  ],
+  "groupMessages": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "userId": 3,
+      "message": "Hello"
+    }
   ]
 }
