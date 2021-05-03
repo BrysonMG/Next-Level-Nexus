@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getGroupById, getGroupMembers } from '../DataManagers/GroupManager'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { Button } from '@material-ui/core'
 import '../CSS/EachGroup.css'
 
@@ -51,14 +51,14 @@ export const IndivGroupDetails = () => {
         <div className="detailsContainer">
             <div className="groupLogoBox">
                 <img className="groupLogo" src={group.logo} alt="group logo" />
-                {currentUserId === group.userId ? <Button variant="contained" color="primary">Edit</Button> : null}
+                {currentUserId === group.userId ? <Link to={`/Groups/Edit/${parseInt(groupId)}`}><Button variant="contained" color="primary">Edit</Button></Link> : null}
             </div>
             <div className="groupInfoBox">
                 <h1 className="groupName">{group.name}</h1>
                 <h2 className="groupGame">{group.gameTitle}</h2>
                 <p className="groupDesc">{group.description}</p>
                 <div className="buttonBox">
-                    {currentUserId === group.userId ? <Button variant="contained" color="primary">Edit</Button> : null}
+                    {currentUserId === group.userId ? <Link to={`/Groups/Edit/${parseInt(groupId)}`}><Button variant="contained" color="primary">Edit</Button></Link> : null}
                     {button}
                 </div>
             </div>

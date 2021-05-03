@@ -38,7 +38,7 @@ export const deleteGroup = id => {
 }
 
 export const editGroup = editedGroup => {
-    return fetch(`${url}/${editGroup.id}`, {
+    return fetch(`${url}/${editedGroup.id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(editedGroup)
