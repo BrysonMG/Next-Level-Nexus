@@ -96,9 +96,9 @@ export const CreateGroupForm = () => {
         })
     }
 
-    const handleCancel = () => [
+    const handleCancel = () => {
         history.push("/Groups")
-    ]
+    }
 
     useEffect(() => {
         getUserCollection()

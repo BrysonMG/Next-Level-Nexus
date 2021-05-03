@@ -1,0 +1,207 @@
+.detailsContainer {
+    width: 80%;
+    margin: auto;
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    display: flex;
+    height: 500px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.groupLogoBox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.groupInfoBox {
+    margin-left: 200px;
+    flex-grow: 1;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.groupName {
+    background-image: linear-gradient(
+	to right,
+	#462523 0,
+    #cb9b51 2%, 
+	#f6e27a 45%,
+	#f6f2c0 50%,
+	#f6e27a 55%,
+	#cb9b51 98%,
+	#462523 100%
+	);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.groupGame {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.groupDesc {
+    color: white;
+    background-color: #0d324d;
+    box-shadow: 0px 0px 15px 1px #7F5A83;
+    padding: 5px;
+    height: 230px;
+}
+
+.buttonBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberHeader {
+    color: white;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.memberList {
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-around;
+}
+
+.memberCard {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #0d324d;
+    box-shadow: 0px 0px 15px 1px #7F5A83;
+}
+
+.memberName {
+    color: white;
+}
+
+.groupChatBox {
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.messagesContainer {
+    overflow-y: auto;
+    height: 325px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d324d;
+}
+
+#groupMessageInputField {
+    height: 60px;
+    width: 350px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    color: white;
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    border: none;
+    font-size: larger;
+}
+
+.receivedMsg {
+    background-color: #7F5A83;
+    min-width: 15%;
+    max-width: 45%;
+    width: min-content;
+    border-radius: 25px;
+    padding: .25px;
+}
+
+.receivedMsg h4 {
+    color: white;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sentMsg {
+    background-color: #3f51b5;
+    padding: .25px;
+    width: auto;
+    border-radius: 25px;
+    margin-bottom: 0;
+    align-self: flex-end;
+}
+
+.sentMsg h4 {
+    color: white;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.nameOfSender {
+    font-weight: bold;
+    color: turquoise;
+}
+
+.deleteGroupMessage {
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-left: 10px;
+}
+
+.deleteGroupMessage:hover {
+    color: #7F5A83;
+    cursor: pointer;
+}
+
+.deleteBoxSent {
+    align-self: flex-end;
+    margin: 7px;
+}
+
+.deleteBox {
+    margin: 7px;
+}
+
+.deleteMemberButton {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.deleteMemberButton:hover {
+    color: #7F5A83;
+    cursor: pointer;
+}

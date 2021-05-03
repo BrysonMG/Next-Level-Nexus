@@ -87,15 +87,6 @@
   ],
   "groups": [
     {
-      "id": 1,
-      "userId": 3,
-      "gameId": 3498,
-      "gameTitle": "Grand Theft Auto V",
-      "name": "GTA Five Guys",
-      "description": "A group of Los Santos terrorists. If you see another player's car, blow it up.",
-      "logo": "https://i.imgur.com/JQF4hVv.png"
-    },
-    {
       "id": 2,
       "userId": 1,
       "gameId": 3328,
@@ -121,42 +112,24 @@
       "name": "ZEUS: Zombie Eradication Unit Six",
       "description": "Let's get together for some laid-back L4D2 runs",
       "logo": "https://i.imgur.com/bqin0wH.png"
-    },
-    {
-      "userId": 3,
-      "gameId": 5286,
-      "gameTitle": "Tomb Raider (2013)",
-      "name": "Should Show In My Groups",
-      "description": "vmhvh mv",
-      "logo": "https://i.imgur.com/8I1siUm.png",
-      "id": 5
     }
   ],
   "groupMembers": [
-    {
-      "id": 1,
-      "userId": 3,
-      "groupId": 1
-    },
     {
       "id": 2,
       "userId": 1,
       "groupId": 2
     },
     {
-      "id": 3,
       "userId": 1,
-      "groupId": 1
+      "groupId": 4,
+      "id": 6
     },
     {
-      "id": 4,
-      "userId": 3,
-      "groupId": 4
-    },
-    {
-      "userId": 3,
-      "groupId": 5,
-      "id": 5
+      "userId": 1,
+      "groupId": 3,
+      "id": 8
     }
-  ]
+  ],
+  "groupMessages": []
 }

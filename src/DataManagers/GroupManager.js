@@ -18,6 +18,12 @@ export const addGroupMember = member => {
     }).then(res=>res.json())
 }
 
+export const deleteGroupMember = id => {
+    return fetch(`http://localhost:8088/groupMembers/${id}`, {
+        method: "DELETE"
+    }).then(res=>res.json())
+}
+
 export const getGroupById = id => {
     return fetch(`${url}/${id}`)
     .then(res=>res.json())
@@ -38,7 +44,7 @@ export const deleteGroup = id => {
 }
 
 export const editGroup = editedGroup => {
-    return fetch(`${url}/${editGroup.id}`, {
+    return fetch(`${url}/${editedGroup.id}`, {
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(editedGroup)
