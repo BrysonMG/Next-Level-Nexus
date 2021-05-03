@@ -1,12 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import {getAllMessages} from '../DataManagers/GroupMessageManager'
-import {IndivGroupChatCard} from './IndivGroupChatCard'
-import {IndivGroupChatInput} from './IndivGroupChatInput'
+import React, { useState, useEffect } from 'react'
+import { useParams } from 'react-router'
+import { getAllMessages } from '../DataManagers/GroupMessageManager'
+import { IndivGroupChatCard } from './IndivGroupChatCard'
+import { IndivGroupChatInput } from './IndivGroupChatInput'
+import '../CSS/EachGroup.css'
 
 export const IndivGroupChatList = () => {
     const [messages, setMessages] = useState([])
-    const currentUserId = parseInt(sessionStorage.getItem("nutshell_user"));
-    
+    const currentUserId = parseInt(sessionStorage.getItem("nexusUser"));
+    const { groupId } = useParams()
+
     const scrollToEnd = () => {
         const container = document.querySelector(".messagesContainer")
         container.scrollTop = container.scrollHeight
@@ -14,38 +17,41 @@ export const IndivGroupChatList = () => {
 
     const getMessages = () => {
         getAllMessages().then(allMessages => {
-            const senderMarked = allMessages.map(msg => ({...msg, sentBySelf: msg.userId === currentUserId}))
+            const thisGroupsMessages = allMessages.filter(message => message.groupId === parseInt(groupId))
+            const senderMarked = thisGroupsMessages.map(msg => ({ ...msg, sentBySelf: msg.userId === currentUserId }))
             return senderMarked
         }).then(markedMessages => {
-            setMessages(allMessages)            
-        }).then(()=>{
-            scrollToEnd()
+            setMessages(markedMessages)
         })
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         getMessages()
-    },[])
-                    //Line 35, MsgCard needs to be renamed, and the component needs to be made
+    }, [])
+
+    useEffect(() => {
+        scrollToEnd()
+    }, [messages])
+
     if (messages.length > 0) {
         return (
-            <>
-            <div className="messagesContainer">
-                {messages.map(message => {
-                    return <MsgCard key={message.id} message={message} /> 
-                })}
+            <div className="groupChatBox">
+                <div className="messagesContainer">
+                    {messages.map(message => {
+                        return <IndivGroupChatCard key={message.id} message={message} />
+                    })}
+                </div>
+                <IndivGroupChatInput toggle={getMessages} />
             </div>
-            <IndivGroupChatInput />
-            </>
         )
     } else {
         return (
-            <>
-            <div className="messagesContainer">
-            
+            <div className="groupChatBox">
+                <div className="messagesContainer">
+
+                </div>
+                <IndivGroupChatInput toggle={getMessages} />
             </div>
-            <IndivGroupChatInput />
-            </>
         )
     }
 }

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { addMessage } from '../DataManagers/GroupMessageManager'
 import { useParams } from 'react-router-dom'
+import {Button} from '@material-ui/core'
 
-export const IndivGroupChatInput = () => {
+export const IndivGroupChatInput = ({toggle}) => {
     const [messageObj, setMessageObj] = useState({
         userId: 0,
         groupId: 0,
@@ -27,16 +28,25 @@ export const IndivGroupChatInput = () => {
         } else {
             let obj = {...messageObj}
             obj.userId = currentUserId
-            obj.groupId = groupId
+            obj.groupId = parseInt(groupId)
             
-            addMessage(obj)
+            addMessage(obj).then(()=> {
+                toggle()
+                const resetObj = {
+                    userId: 0,
+                    groupId: 0,
+                    message: ""
+                }
+                setMessageObj(resetObj)
+            })
         }
     }
+
     
     return (
         <div className="inputContainer">
             <textarea id="groupMessageInputField" value={messageObj.message} placeholder="Type Your Message" onChange={handleMessageChange} />
-            <button id="sendButton" onClick={handleClickSend} >Send</button>
+            <Button id="sendButton" variant="contained" color="primary" onClick={handleClickSend} >Send</Button>
         </div>
     )
 }

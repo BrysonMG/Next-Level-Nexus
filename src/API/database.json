@@ -157,6 +157,11 @@
       "userId": 3,
       "groupId": 5,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "groupId": 4,
+      "id": 6
     }
   ],
   "groupMessages": [
@@ -165,6 +170,66 @@
       "groupId": 1,
       "userId": 3,
       "message": "Hello"
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "Testing new message",
+      "id": 2
+    },
+    {
+      "userId": 1,
+      "groupId": 1,
+      "message": "new",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "esrdhgxdh",
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "test",
+      "id": 5
+    },
+    {
+      "userId": 1,
+      "groupId": 1,
+      "message": "hsrh",
+      "id": 6
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "gkgbj,",
+      "id": 7
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "hdf",
+      "id": 8
+    },
+    {
+      "userId": 3,
+      "groupId": 5,
+      "message": "Testing messages for different group",
+      "id": 9
+    },
+    {
+      "userId": 3,
+      "groupId": 5,
+      "message": "Testing super long message. dbfghj rtkuhrkgh skj hslf dl l sl kjv k jsl hxzljn vxksfj sg s sl   lsl sgjh slkng sl kjgoli wlg",
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "groupId": 5,
+      "message": "short",
+      "id": 11
     }
   ]
 }

@@ -1,7 +1,7 @@
 const url = 'http://localhost:8088/groupMessages'
 
 export const getAllMessages = () => {
-    return fetch(`${url}`)
+    return fetch(`${url}?_expand=user`)
     .then(res=>res.json())
 }
 
