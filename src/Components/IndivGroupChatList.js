@@ -38,7 +38,7 @@ export const IndivGroupChatList = () => {
             <div className="groupChatBox">
                 <div className="messagesContainer">
                     {messages.map(message => {
-                        return <IndivGroupChatCard key={message.id} message={message} />
+                        return <IndivGroupChatCard key={message.id} message={message} reload={getMessages} />
                     })}
                 </div>
                 <IndivGroupChatInput toggle={getMessages} />

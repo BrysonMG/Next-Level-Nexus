@@ -129,6 +129,11 @@
       "userId": 1,
       "groupId": 3,
       "id": 8
+    },
+    {
+      "userId": 3,
+      "groupId": 4,
+      "id": 9
     }
   ],
   "groupMessages": []
