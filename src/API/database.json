@@ -9,28 +9,28 @@
       "pass": "Bryson"
     },
     {
-      "username": "test",
-      "pass": "test",
+      "username": "Rick",
+      "pass": "Rick",
       "id": 2
     },
     {
-      "username": "1",
-      "pass": "1",
+      "username": "Morty",
+      "pass": "Morty",
       "id": 3
     },
     {
-      "username": "2",
-      "pass": "2",
+      "username": "Beth",
+      "pass": "Beth",
       "id": 4
     },
     {
-      "username": "3",
-      "pass": "3",
+      "username": "Summer",
+      "pass": "Summer",
       "id": 5
     },
     {
-      "username": "9",
-      "pass": "9",
+      "username": "Jerry",
+      "pass": "Jerry",
       "id": 6
     }
   ],

@@ -9,6 +9,7 @@ import { Groups } from './Pages/Groups'
 import { CreateGroupForm } from './Components/CreateGroupForm'
 import { IndividualGroup } from './Pages/IndividualGroup'
 import { GroupEdit } from './Components/GroupEdit'
+import { IndividualGame } from './Pages/IndividualGame'
 
 export const Routing = ({toggleLogin, toggleRegister}) => {
 
@@ -52,7 +53,7 @@ export const Routing = ({toggleLogin, toggleRegister}) => {
         </Route>
 
         <Route exact path="/Games/:gameId(\d+)">
-
+            <IndividualGame />
         </Route>
         </>
     )
