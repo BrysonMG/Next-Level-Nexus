@@ -87,15 +87,6 @@
   ],
   "groups": [
     {
-      "id": 1,
-      "userId": 3,
-      "gameId": 3498,
-      "gameTitle": "Grand Theft Auto V",
-      "name": "GTA Five Guys",
-      "description": "A group of Los Santos terrorists. If you see another player's car, blow it up.",
-      "logo": "https://i.imgur.com/JQF4hVv.png"
-    },
-    {
       "id": 2,
       "userId": 1,
       "gameId": 3328,
@@ -121,115 +112,29 @@
       "name": "ZEUS: Zombie Eradication Unit Six",
       "description": "Let's get together for some laid-back L4D2 runs",
       "logo": "https://i.imgur.com/bqin0wH.png"
-    },
-    {
-      "id": 5,
-      "userId": 3,
-      "gameId": 5286,
-      "gameTitle": "Tomb Raider (2013)",
-      "name": "Should Show In My Groups",
-      "description": "hdxcghhj",
-      "logo": "https://i.imgur.com/JQF4hVv.png"
     }
   ],
   "groupMembers": [
-    {
-      "id": 1,
-      "userId": 3,
-      "groupId": 1
-    },
     {
       "id": 2,
       "userId": 1,
       "groupId": 2
     },
     {
-      "id": 3,
-      "userId": 1,
-      "groupId": 1
-    },
-    {
-      "id": 4,
-      "userId": 3,
-      "groupId": 4
-    },
-    {
-      "userId": 3,
-      "groupId": 5,
-      "id": 5
-    },
-    {
       "userId": 1,
       "groupId": 4,
       "id": 6
-    }
-  ],
-  "groupMessages": [
-    {
-      "id": 1,
-      "groupId": 1,
-      "userId": 3,
-      "message": "Hello"
     },
     {
       "userId": 3,
-      "groupId": 1,
-      "message": "Testing new message",
-      "id": 2
-    },
-    {
-      "userId": 1,
-      "groupId": 1,
-      "message": "new",
-      "id": 3
-    },
-    {
-      "userId": 3,
-      "groupId": 1,
-      "message": "esrdhgxdh",
-      "id": 4
-    },
-    {
-      "userId": 3,
-      "groupId": 1,
-      "message": "test",
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "groupId": 1,
-      "message": "hsrh",
-      "id": 6
-    },
-    {
-      "userId": 3,
-      "groupId": 1,
-      "message": "gkgbj,",
+      "groupId": 4,
       "id": 7
     },
     {
-      "userId": 3,
-      "groupId": 1,
-      "message": "hdf",
+      "userId": 1,
+      "groupId": 3,
       "id": 8
-    },
-    {
-      "userId": 3,
-      "groupId": 5,
-      "message": "Testing messages for different group",
-      "id": 9
-    },
-    {
-      "userId": 3,
-      "groupId": 5,
-      "message": "Testing super long message. dbfghj rtkuhrkgh skj hslf dl l sl kjv k jsl hxzljn vxksfj sg s sl   lsl sgjh slkng sl kjgoli wlg",
-      "id": 10
-    },
-    {
-      "userId": 3,
-      "groupId": 5,
-      "message": "short",
-      "id": 11
     }
-  ]
+  ],
+  "groupMessages": []
 }
