@@ -32,6 +32,10 @@
     margin-bottom: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .collectionGameContainer {
     margin-top: 15px;
     margin-bottom: 15px;
