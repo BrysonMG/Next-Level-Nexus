@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getGameById } from '../DataManagers/RawgManager'
+import {Link} from 'react-router-dom'
 import '../CSS/MyReviews.css'
 
 export const MyReviewsCard = ({ userGame }) => {
@@ -24,12 +25,12 @@ export const MyReviewsCard = ({ userGame }) => {
     }, [])
 
     return (
-        <div className="myReviewsCard">
+        <Link to={`/Games/${userGame.gameId}`}><div className="myReviewsCard">
             <img className="myReviewsImg" src={review.background_image} alt="game" />
             <div className="reviewTextBox">
                 <h2 className="myReviewsGame">{review.gameTitle}</h2>
-                <p className="myReviewsContent">{review.review}</p>
+                <p className="myReviewsContent">{review.review === "" ? "Please Write A Review" : review.review}</p>
             </div>
-        </div>
+        </div></Link>
     )
 }

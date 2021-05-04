@@ -87,6 +87,11 @@
       "userId": 1,
       "groupId": 3,
       "id": 8
+    },
+    {
+      "userId": 3,
+      "groupId": 2,
+      "id": 9
     }
   ],
   "groupMessages": []
