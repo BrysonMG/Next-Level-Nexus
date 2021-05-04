@@ -1,0 +1,53 @@
+.contentAndButton {
+    display: flex;
+    flex-direction: column;
+    background: rgba(13, 50, 77, 0.75);
+    box-shadow: 0px 0px 15px 5px #7F5A83;
+    margin: auto;
+    margin-top: 40px;
+    width: 80%;
+    height: 515px;
+    overflow-y: auto;
+}
+
+.gameDetailsContainer {
+    display: flex;
+}
+
+.titleImgBox {
+    margin-left: 20px;
+}
+
+.gameTitle {
+    color: white;
+    margin-left: 20px;
+}
+
+.gameImg {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.descriptionBox {
+    margin: 20px;
+    margin-top: 0;
+}
+
+.descriptionTitle {
+    color: white;
+    font-weight: bold;
+}
+
+.descriptionBox p {
+    color: white;
+}
+
+#addCollection, #removeCollection {
+    width: fit-content;
+    align-self: flex-end;
+    margin: 20px;
+    margin-top: 0;
+}
