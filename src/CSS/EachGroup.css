@@ -130,10 +130,10 @@
     margin-bottom: 10px;
     margin-right: 15px;
     color: white;
-    background: rgba(13, 50, 77, 0.75);
-    box-shadow: 0px 0px 15px 5px #7F5A83;
-    border: none;
+    background: rgba(6, 29, 46, 0.75);
+    border: 1px solid #7F5A83;
     font-size: larger;
+    font: 1em sans-serif;
 }
 
 .receivedMsg {

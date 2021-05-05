@@ -10,6 +10,7 @@ import { CreateGroupForm } from './Components/CreateGroupForm'
 import { IndividualGroup } from './Pages/IndividualGroup'
 import { GroupEdit } from './Components/GroupEdit'
 import { IndividualGame } from './Pages/IndividualGame'
+import { CreateReviewForm } from './Components/CreateReviewForm'
 
 export const Routing = ({ toggleLogin, toggleRegister, update }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(true)
@@ -73,6 +74,10 @@ export const Routing = ({ toggleLogin, toggleRegister, update }) => {
 
             <Route exact path="/Games/:gameId(\d+)">
                 {isLoggedIn ? <IndividualGame /> : <Redirect to="/Login" />}
+            </Route>
+
+            <Route exact path="/Reviews/Create">
+                {isLoggedIn ? <CreateReviewForm /> : <Redirect to="/Login" />}
             </Route>
         </>
     )

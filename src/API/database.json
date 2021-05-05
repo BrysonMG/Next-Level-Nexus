@@ -44,7 +44,7 @@
       "userId": 3,
       "gameId": 766,
       "gameTitle": "Warframe",
-      "review": "",
+      "review": " A fun game that eats at your wallet",
       "id": 1
     },
     {
@@ -81,6 +81,13 @@
       "gameTitle": "Rocket Arena",
       "review": "",
       "id": 6
+    },
+    {
+      "userId": 2,
+      "gameId": 766,
+      "gameTitle": "Warframe",
+      "review": "Test",
+      "id": 7
     }
   ],
   "groups": [
@@ -132,6 +139,16 @@
       "userId": 3,
       "groupId": 2,
       "id": 9
+    },
+    {
+      "userId": 3,
+      "groupId": 4,
+      "id": 10
+    },
+    {
+      "userId": 3,
+      "groupId": 4,
+      "id": 11
     }
   ],
   "groupMessages": [
