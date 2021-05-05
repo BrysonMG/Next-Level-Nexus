@@ -3,9 +3,11 @@ import {RAWGkey} from './APIkeys.js'
 const corsFix = 'https://polar-bayou-96358.herokuapp.com/'
 const baseURL = `https://api.rawg.io/api/games?key=${RAWGkey}`
 
+const theDate = new Date()
+
 
 export const getNewlyReleased = () => {
-    return fetch(`${corsFix}${baseURL}&page=1&page_size=20&ordering=-released&dates=2021-01-01,2021-05-15&exclude_additions=true`)
+    return fetch(`${corsFix}${baseURL}&page=1&page_size=20&ordering=-released&dates=2020-01-01,${theDate.toISOString().split('T')[0]}&exclude_additions=true`)
     .then(res=>res.json())
     .then(res=>res.results)
 }

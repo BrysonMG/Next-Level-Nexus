@@ -76,6 +76,9 @@ export const IndivGameDetails = () => {
         }
     },[inCollection])
 
+    if (game.background_image === null) {
+        game.background_image = 'https://cdn-a.william-reed.com/var/wrbm_gb_food_pharma/storage/images/3/3/2/7/237233-6-eng-GB/Cosmoprof-Asia-Ltd-SIC-Cosmetics-20132_news_large.jpg'
+    }
     
     return (
         <div className="contentAndButton">

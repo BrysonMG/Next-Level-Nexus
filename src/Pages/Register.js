@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core'
 import { addUser, getAllUsers } from '../DataManagers/UserManager'
 import { useHistory } from 'react-router-dom'
 
-export const Register =({toggleRegister})=> {
+export const Register =({toggleRegister, auth})=> {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const history = useHistory()
@@ -33,6 +33,7 @@ export const Register =({toggleRegister})=> {
                 sessionStorage.setItem("nexusUser", justRegistered.id)
                 history.push("/")
                 toggleRegister()
+                auth()
             })
         })
 

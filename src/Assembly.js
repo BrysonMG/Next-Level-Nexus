@@ -5,9 +5,12 @@ import mainLogo from './Images/mainLogo.png'
 import './CSS/Header.css'
 import {LoginRegisterButtons} from './Components/LoginRegisterButtons'
 import {LoggedInUser} from './Components/LoggedInUser'
+import {useHistory} from 'react-router-dom'
 
 export const Assembly = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [updater, setUpdater] = useState(false)
+    const history = useHistory()
 
     const checkForUser = () => {
         if (sessionStorage.getItem("nexusUser") === null) {
@@ -21,6 +24,12 @@ export const Assembly = () => {
         event.preventDefault()
         sessionStorage.clear()
         setIsLoggedIn(false)
+        history.push("/")
+        if (updater) {
+            setUpdater(false)
+        } else {
+            setUpdater(true)
+        }
     }
 
 
@@ -51,7 +60,7 @@ export const Assembly = () => {
                 {isLoggedIn ? <LoggedInUser handleLogOut={handleLogOut} /> : <LoginRegisterButtons />}
             </div>
             <Nav />
-            <Routing toggleRegister={toggleRegister} toggleLogin={toggleLogin} />
+            <Routing toggleRegister={toggleRegister} toggleLogin={toggleLogin} update={updater} />
         </>
     )
 }

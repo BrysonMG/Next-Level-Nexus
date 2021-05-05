@@ -32,6 +32,11 @@
       "username": "Jerry",
       "pass": "Jerry",
       "id": 6
+    },
+    {
+      "username": "bryan",
+      "pass": "bryan",
+      "id": 7
     }
   ],
   "userGames": [
@@ -41,6 +46,41 @@
       "gameTitle": "Warframe",
       "review": "",
       "id": 1
+    },
+    {
+      "userId": 3,
+      "gameId": 3192,
+      "gameTitle": "Metal Gear Solid V: The Phantom Pain",
+      "review": "",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "gameId": 3498,
+      "gameTitle": "Grand Theft Auto V",
+      "review": "",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "gameId": 3328,
+      "gameTitle": "The Witcher 3: Wild Hunt",
+      "review": "",
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "gameId": 5679,
+      "gameTitle": "The Elder Scrolls V: Skyrim",
+      "review": "",
+      "id": 5
+    },
+    {
+      "userId": 7,
+      "gameId": 455599,
+      "gameTitle": "Rocket Arena",
+      "review": "",
+      "id": 6
     }
   ],
   "groups": [
@@ -94,5 +134,12 @@
       "id": 9
     }
   ],
-  "groupMessages": []
+  "groupMessages": [
+    {
+      "userId": 3,
+      "groupId": 2,
+      "message": "dhgnc",
+      "id": 1
+    }
+  ]
 }

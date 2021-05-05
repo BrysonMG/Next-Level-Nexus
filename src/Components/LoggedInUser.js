@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import defaultUser from '../Images/defaultUser.jpg'
 import '../CSS/Header.css'
 import { Button } from '@material-ui/core'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
