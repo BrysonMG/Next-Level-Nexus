@@ -16,15 +16,7 @@ export const Home = ({logout, login}) => {
 
     useEffect(() => {
         checkAuth()
-    }, [])
-
-    useEffect(()=>{
-        setIsLoggedIn(true)
-    },[login])
-
-    useEffect(() => {
-        setIsLoggedIn(false)
-    },[logout])
+    }, [login, logout])
 
     return (
         <>
