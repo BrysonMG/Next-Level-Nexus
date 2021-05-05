@@ -12,7 +12,7 @@ import { GroupEdit } from './Components/GroupEdit'
 import { IndividualGame } from './Pages/IndividualGame'
 
 export const Routing = ({ toggleLogin, toggleRegister, update }) => {
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isLoggedIn, setIsLoggedIn] = useState(true)
     const [login, setLogin] = useState(false)
 
     const checkAuth = () => {
@@ -31,11 +31,7 @@ export const Routing = ({ toggleLogin, toggleRegister, update }) => {
 
     useEffect(() => {
         checkAuth()
-    }, [])
-
-    useEffect(() => {
-        setIsLoggedIn(false)
-    },[update])
+    }, [update])
 
     return (
         <>
