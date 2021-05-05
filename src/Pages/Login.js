@@ -4,7 +4,7 @@ import '../CSS/LoginRegister.css'
 import { getAllUsers } from '../DataManagers/UserManager'
 import { useHistory } from 'react-router-dom'
 
-export const Login =({toggleLogin})=> {
+export const Login =({toggleLogin, auth})=> {
     const [username, setUsername] = useState("")
     const [password, setPassword] = useState("")
     const history = useHistory()
@@ -33,6 +33,7 @@ export const Login =({toggleLogin})=> {
                 sessionStorage.setItem("nexusUser", loginMatch.id)
                 history.push("/")
                 toggleLogin()
+                auth()
             } else {
                 setUsername("")
                 setPassword("")
