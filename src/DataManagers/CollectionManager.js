@@ -18,3 +18,11 @@ export const removeFromCollection = (id) =>{
         method: "DELETE"
     }).then(res=>res.json())
 }
+
+export const editReview = editedObj => {
+    return fetch(`${url}/usergames/${editedObj.id}`, {
+        method:"PUT",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(editedObj)
+    }).then(res=>res.json())
+}

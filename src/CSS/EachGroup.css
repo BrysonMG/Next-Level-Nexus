@@ -138,11 +138,11 @@
 
 .receivedMsg {
     background-color: #7F5A83;
-    min-width: 15%;
-    max-width: 45%;
-    width: min-content;
-    border-radius: 25px;
     padding: .25px;
+    width: fit-content;
+    max-width: 45%;
+    border-radius: 25px;
+    margin-bottom: 0;
 }
 
 .receivedMsg h4 {

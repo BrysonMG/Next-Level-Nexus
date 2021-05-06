@@ -109,6 +109,11 @@
     color: white;
 }
 
+.buttonsBox a {
+    justify-self: center;
+    align-self: center;
+}
+
 #editReview, #deleteReview {
     width: fit-content;
     margin: 5px;
