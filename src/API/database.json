@@ -34,112 +34,268 @@
       "id": 6
     },
     {
-      "username": "bryan",
-      "pass": "bryan",
+      "username": "Bryan",
+      "pass": "Bryan",
       "id": 7
     }
   ],
   "userGames": [
     {
-      "userId": 3,
-      "gameId": 766,
-      "gameTitle": "Warframe",
-      "review": "",
+      "userId": 2,
+      "gameId": 4200,
+      "gameTitle": "Portal 2",
+      "review": "Not at all how portal technology works, and the puzzles were so easy, a toddler could solve them.",
       "id": 1
     },
     {
-      "userId": 3,
-      "gameId": 3192,
-      "gameTitle": "Metal Gear Solid V: The Phantom Pain",
+      "userId": 6,
+      "gameId": 28,
+      "gameTitle": "Red Dead Redemption 2",
       "review": "",
       "id": 2
     },
     {
-      "userId": 3,
-      "gameId": 3498,
-      "gameTitle": "Grand Theft Auto V",
+      "userId": 6,
+      "gameId": 16944,
+      "gameTitle": "The Witcher 2: Assassins of Kings Enhanced Edition",
       "review": "",
       "id": 3
     },
     {
       "userId": 3,
-      "gameId": 3328,
-      "gameTitle": "The Witcher 3: Wild Hunt",
-      "review": "",
+      "gameId": 3498,
+      "gameTitle": "Grand Theft Auto V",
+      "review": "Everywhere I go, somebody blows me up or shoots me.",
       "id": 4
     },
     {
       "userId": 3,
       "gameId": 5679,
       "gameTitle": "The Elder Scrolls V: Skyrim",
-      "review": "",
+      "review": "Super fun game",
       "id": 5
     },
     {
-      "userId": 7,
-      "gameId": 455599,
-      "gameTitle": "Rocket Arena",
-      "review": "",
+      "userId": 3,
+      "gameId": 22509,
+      "gameTitle": "Minecraft",
+      "review": "A fun way to unwind",
       "id": 6
+    },
+    {
+      "userId": 2,
+      "gameId": 22509,
+      "gameTitle": "Minecraft",
+      "review": "You craft stuff to mine with, and mine stuff to craft with... I'm starting to like it.",
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "gameId": 4483,
+      "gameTitle": "Duke Nukem Forever",
+      "review": "Killing aliens, vulgarity, AND substance abuse? This is my kind of game!",
+      "id": 8
+    },
+    {
+      "userId": 2,
+      "gameId": 3070,
+      "gameTitle": "Fallout 4",
+      "review": "A nuclear apocalypse simulator? Seems like a logical preparation for the future.",
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "gameId": 278,
+      "gameTitle": "Horizon Zero Dawn",
+      "review": "",
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "gameId": 4483,
+      "gameTitle": "Duke Nukem Forever",
+      "review": "My dad recommended this game to me, and I gotta say... it's grown on me",
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "gameId": 22509,
+      "gameTitle": "Minecraft",
+      "review": "This is a great family game!",
+      "id": 12
+    },
+    {
+      "userId": 3,
+      "gameId": 32,
+      "gameTitle": "Destiny 2",
+      "review": "",
+      "id": 13
+    },
+    {
+      "userId": 3,
+      "gameId": 1030,
+      "gameTitle": "Limbo",
+      "review": "",
+      "id": 14
+    },
+    {
+      "userId": 3,
+      "gameId": 802,
+      "gameTitle": "Borderlands 2",
+      "review": "",
+      "id": 15
+    },
+    {
+      "userId": 3,
+      "gameId": 58133,
+      "gameTitle": "Spyro Reignited Trilogy",
+      "review": "",
+      "id": 16
+    },
+    {
+      "userId": 3,
+      "gameId": 3272,
+      "gameTitle": "Rocket League",
+      "review": "",
+      "id": 17
     }
   ],
   "groups": [
     {
-      "id": 2,
-      "userId": 1,
-      "gameId": 3328,
-      "gameTitle": "The Witcher 3: Wild Hunt",
+      "userId": 2,
+      "gameId": 4200,
+      "gameTitle": "Portal 2",
+      "name": "Portal 2 Walkthroughs",
+      "description": "Since I had such an easy time with the puzzles in this game, I can tell you how to beat any of them, just ask.",
+      "logo": "https://i.imgur.com/FZAZ3cT.png",
+      "id": 1
+    },
+    {
+      "userId": 6,
+      "gameId": 28,
+      "gameTitle": "Red Dead Redemption 2",
+      "name": "Jerry's Saloon",
+      "description": "Anyone wanna join me in the Wild West?",
+      "logo": "https://i.imgur.com/8I1siUm.png",
+      "id": 2
+    },
+    {
+      "userId": 6,
+      "gameId": 16944,
+      "gameTitle": "The Witcher 2: Assassins of Kings Enhanced Edition",
       "name": "Wise Witchers",
-      "description": "We just chat and share our Witcher knowledge.",
-      "logo": "https://i.imgur.com/8I1siUm.png"
+      "description": "This is a place to share our Witcher knowledge. All are welcome!",
+      "logo": "https://i.imgur.com/bqin0wH.png",
+      "id": 3
     },
     {
-      "id": 3,
-      "userId": 1,
-      "gameId": 4291,
-      "gameTitle": "Counter-Strike: Global Offensive",
-      "name": "CS: GO GO GO!",
-      "description": "A highly competitive group for late night CS: GO matches",
-      "logo": "https://i.imgur.com/vYXr99Z.png"
+      "userId": 4,
+      "gameId": 4483,
+      "gameTitle": "Duke Nukem Forever",
+      "name": "Alien Annihilators",
+      "description": "Die alien scum!",
+      "logo": "https://i.imgur.com/vYXr99Z.png",
+      "id": 4
     },
     {
-      "id": 4,
-      "userId": 1,
-      "gameId": 12020,
-      "gameTitle": "Left 4 Dead 2",
-      "name": "ZEUS: Zombie Eradication Unit Six",
-      "description": "Let's get together for some laid-back L4D2 runs",
-      "logo": "https://i.imgur.com/bqin0wH.png"
+      "userId": 3,
+      "gameId": 22509,
+      "gameTitle": "Minecraft",
+      "name": "MinerCrafters",
+      "description": "Let's Play Minecraft!",
+      "logo": "https://i.imgur.com/j7M1vdm.png",
+      "id": 5
     }
   ],
   "groupMembers": [
     {
-      "id": 2,
-      "userId": 1,
-      "groupId": 2
+      "userId": 2,
+      "groupId": 1,
+      "id": 1
     },
     {
-      "userId": 1,
+      "userId": 3,
+      "groupId": 1,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "groupId": 1,
+      "id": 3
+    },
+    {
+      "userId": 6,
+      "groupId": 2,
+      "id": 4
+    },
+    {
+      "userId": 6,
+      "groupId": 3,
+      "id": 5
+    },
+    {
+      "userId": 4,
       "groupId": 4,
       "id": 6
     },
     {
-      "userId": 1,
-      "groupId": 3,
+      "userId": 3,
+      "groupId": 5,
+      "id": 7
+    },
+    {
+      "userId": 2,
+      "groupId": 5,
       "id": 8
     },
     {
-      "userId": 3,
-      "groupId": 2,
+      "userId": 6,
+      "groupId": 5,
       "id": 9
     }
   ],
   "groupMessages": [
     {
-      "userId": 3,
-      "groupId": 2,
-      "message": "dhgnc",
+      "userId": 2,
+      "groupId": 1,
+      "message": "The cake isn't really a lie if you're good enough.",
       "id": 1
+    },
+    {
+      "userId": 3,
+      "groupId": 1,
+      "message": "Aw geez Rick, I'm stuck on Level 2...",
+      "id": 2
+    },
+    {
+      "userId": 2,
+      "groupId": 1,
+      "message": "You're an idiot Morty, just use your portals to put the box on the button.",
+      "id": 3
+    },
+    {
+      "userId": 4,
+      "groupId": 1,
+      "message": "Dad, don't call Morty an idiot. He's just... special.",
+      "id": 4
+    },
+    {
+      "userId": 2,
+      "groupId": 1,
+      "message": "I call 'em like I see 'em sweetie.",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "groupId": 5,
+      "message": "Morty, we're starting a new game tomorrow.",
+      "id": 6
+    },
+    {
+      "userId": 6,
+      "groupId": 5,
+      "message": "Can I join in?",
+      "id": 7
     }
   ]
 }

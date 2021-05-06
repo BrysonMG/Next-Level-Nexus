@@ -5,7 +5,7 @@ import { getCollection, addToCollection, removeFromCollection } from '../DataMan
 import { useParams } from 'react-router-dom'
 import '../CSS/EachGame.css'
 
-export const IndivGameDetails = () => {
+export const IndivGameDetails = ({toggle}) => {
     const { gameId } = useParams()
     const [inCollection, setInCollection] = useState(false)
     const [button, setButton] = useState(null)
@@ -45,6 +45,7 @@ export const IndivGameDetails = () => {
             }
             addToCollection(collObj).then(()=>{
                 checkInCollection()
+                toggle()
             })
         })
     }
@@ -57,6 +58,7 @@ export const IndivGameDetails = () => {
 
             removeFromCollection(target.id).then(()=>{
                 checkInCollection()
+                toggle()
             })
         })
     }
